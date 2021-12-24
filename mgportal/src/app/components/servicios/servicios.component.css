@@ -1,0 +1,38 @@
+.panel-group .panel-heading.active:before {
+    content: "\f068";
+    color: #cd0d21;
+    background: #fff;
+}
+
+.bannerSt table {
+    text-align: left;
+    border: none;
+}
+
+.bannerSt table tbody tr td {
+    border: none;
+}
+
+.bannerSt .table-responsive {
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .bannerSt table tbody tr td {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1600px) {}
+
+.navMG .navPr ul li.hs-menu-item.active>a:before {
+    opacity: 1;
+}

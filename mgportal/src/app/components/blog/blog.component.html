@@ -1,0 +1,146 @@
+<div class="mb30">
+    <div class="container-fluid contFix rel blogList top">
+        <div class="row">
+            <div class="container rel cf">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 cf z2">
+                        <div class="filter pb30 fixto-fixed" style="top: 57.75px; left: 104.5px;">
+                            <div class="row">
+                                <div class="col-xs-12 tf">
+                                    <h5><span>Categorías</span></h5>
+                                </div>
+                            </div>
+                            <ul>
+
+
+                                <li><a [routerLink]="'/blog/'+mainPost._id" title="Evaluación de Competencias Laborales">Evaluación de Competencias
+                                        Laborales</a></li>
+
+                                <li>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 col-md-9">
+
+                        <div class="row">
+                            <div class="col-sm-12 pb20">
+                                <div class="search">
+                                    <form id="form1">
+                                        <div class="contSearch">
+                                            <input type="search" [(ngModel)]="criteria" class="hs-search-field__input" name="term" autocomplete="off" placeholder="Buscar"  >
+                                        </div>
+                                        <button (click)="get_page()" class="fa fa-search sdesk"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  ENTRADA PRINCIPAL -->
+                        <div class="row">
+                            <div class="col-sm-12 first mb50">
+                                <div class="row">
+                                    <div *ngIf="mainPost">
+                                        <div class="col-sm-6 pb20">
+                                            <a [routerLink]="'/blog/'+mainPost._id" title="4 consejos para una Evaluación de Competencias Laborales">
+                                                <img class="img bgi lazyload" [src]="mainPost.mainImage" />
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6 pb20">
+                                            <div class="cont">
+                                                <h6 class="date">{{mainPost.meta.created | date: 'dd/MM/yyyy'}} <span class="pull-right">Lectura:
+                                                        {{mainPost.readingTime}}min</span></h6>
+                                                <h1><a [routerLink]="'/blog/'+mainPost._id" title="Talos: Aprende de errores pasados para prevenir accidentes laborales">{{mainPost.title}}</a>
+                                                </h1>
+                                                <p>{{mainPost.resumen}}</p>
+                                                <div class="cta pt20">
+                                                    <a [routerLink]="'/blog/'+mainPost._id" class="btn btn-default btn-lg" title="Leer más">Leer Más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin entrada principal -->
+
+                        <!-- Entradas secundarias -->
+                        <div class="row shSec">
+                            <div class="col-sm-6" *ngFor="let blog of otherPosts">
+                                <div class="mb50 rel">
+                                    <a [routerLink]="'/blog/'+blog._id" title="4 consejos para una Evaluación de Competencias Laborales">
+                                        <img class="img bgi lazyload" [src]="blog.mainImage" />
+                                    </a>
+
+
+
+                                    <div class="cont sh text-center" style="height: 248.734px;;">
+                                        <h6 class="date">{{blog.meta.created | date: "dd/MM/YYYY"}} <span class="pull-right">Lectura: {{blog.readingTime}}min</span></h6>
+                                        <h3><a [routerLink]="'/blog/'+blog._id">{{blog.title}}</a>
+                                        </h3>
+                                        <p>{{blog.resumen}}</p>
+                                    </div>
+                                    <div class="cta pt20 text-center">
+                                        <a [routerLink]="'/blog/'+blog._id" class="btn btn-default btn-lg" title="4 consejos para una Evaluación de Competencias Laborales">Leer
+                                            Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin entradas secundarias -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSusc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Suscripción al Blog</h4>
+            </div>
+            <div class="modal-body">
+                <div id="hs_cos_wrapper_blog_template_email_subscription" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_blog_template_email_subscription_blog_subscribe" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_subscribe">
+                        <h3 id="hs_cos_wrapper_blog_template_email_subscription_blog_subscribe_title"
+                            class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field"
+                            data-hs-cos-type="text"></h3>
+
+                        <div id="hs_form_target_blog_template_email_subscription_blog_subscribe_5371"></div>
+
+
+
+                    </span></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+      $('a.cta_button').each(function() {
+        if ($(this).find('img').length) {
+          $(this).addClass('cimg');
+        }
+      });
+    });
+    
+    $(window).load(function(){
+      $('a.cta_button').each(function() {
+        if ($(this).find('img').length) {
+          $(this).addClass('cimg');
+        }
+      });
+    });
+  </script>
+  

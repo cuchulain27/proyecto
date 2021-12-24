@@ -1,0 +1,115 @@
+<!-- <h1>{{blogData.title}}</h1>
+<small>{{blogData.meta.created | date:'dd/MM/YYYY'}}</small><br>
+<span>Lectura: <b>{{blogData.readingTime}}</b></span><br>
+<img [src]="blogData.mainImage">
+<br><br>
+<hr>
+<div *ngIf="content" [innerHTML]="content"></div> -->
+
+
+<div class="container-fluid topBlog post rel">
+    <div class="row">
+        <div class="container rel z2 pt50 pb50 mt30 ct">
+            <div class="row">
+
+                <div class="col-sm-5 col-lg-6 img">
+                    <img [src]="blogData.mainImage" alt="Talos: Aprende de errores pasados para prevenir accidentes laborales">
+                </div>
+                <div class="col-sm-7 col-lg-6">
+                    <div class="cont">
+
+
+
+
+                        <h6 class="date">{{blogData.meta.created | date:'dd/MM/YYYY'}} <span class="pull-right">{{blogData.readingTime}}</span></h6>
+                        <h1><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">{{blogData.title}}</span></h1>
+                        <div class="socials text-right pt20 pb10 mt50">
+                            <h6>Compartir:</h6>
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.mgcertifica.cl/blog/talos-ayuda-a-evitar-accidentes-laborales" class="fab fa-linkedin-in" target="_blank" title="Compartir en Linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.mgcertifica.cl/blog/talos-ayuda-a-evitar-accidentes-laborales" class="fab fa-facebook-f" target="_blank" title="Compartir en Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/intent/tweet?source=https://www.mgcertifica.cl/blog/talos-ayuda-a-evitar-accidentes-laborales&amp;text=Talos:%20Aprende%20de%20errores%20pasados%20para%20prevenir%20accidentes%20laborales%20-%20https://www.mgcertifica.cl/blog/talos-ayuda-a-evitar-accidentes-laborales"
+                                        class="fab fa-twitter" target="_blank" title="Compartir en Twitter"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container blogPost pt40 pb50">
+    <div class="row contFix">
+        <div class="col-sm-12 col-lg-10 col-lg-offset-1 contPost">
+            <div *ngIf="content" [innerHTML]="content"></div>
+
+            <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-eb97d474-708f-4481-8225-31e6b43b6bcb"><span class="hs-cta-node hs-cta-eb97d474-708f-4481-8225-31e6b43b6bcb" id="hs-cta-eb97d474-708f-4481-8225-31e6b43b6bcb" style="visibility: visible; display: block; text-align: center;" data-hs-drop="true"><a id="cta_button_9013934_e723547a-11d7-4aac-8384-928e49b6ac07" class="cta_button cimg" href="https://www.mgcertifica.cl/cs/c/?cta_guid=e723547a-11d7-4aac-8384-928e49b6ac07&amp;signature=AAH58kF12XQuhOlpE9ZWzIkC2wui13KRYg&amp;pageId=55367398969&amp;placement_guid=eb97d474-708f-4481-8225-31e6b43b6bcb&amp;click=50ed297c-1c7b-48a5-94c4-0d1501ba49fc&amp;hsutk=7819ff016345d359905d787122a4824c&amp;canon=https%3A%2F%2Fwww.mgcertifica.cl%2Fblog%2Ftalos-ayuda-a-evitar-accidentes-laborales&amp;utm_referrer=https%3A%2F%2Fwww.mgcertifica.cl%2Fblog&amp;portal_id=9013934&amp;redirect_url=APefjpF3B0wMFvaHzhD7cR2v-fZciuQ3C5E9ht2PQWeJSb286fNRTaKNbTyuYNHNYrtnbrJNSbP_GwIgsrWpDzcSkyBdSNznkJMxZbbgjcr8QvWKBALtStW2TWXHxMCkMqZdhd9NoZTvPZGbz-3FfUof_jXoZ0eE0xXpizc87P7XLFJKo_t7yytW_71Ta4oEv3jL7VCLsuknN_IYuRLhhFcGs5n4oe0sYscXQ1yYoHd0aawxhKTeNikqh2jUna2gK6F3R2TsRv7Nw9FAROW96l0ALLEy9ZgITg&amp;__hstc=96290627.7819ff016345d359905d787122a4824c.1638277204197.1639179978889.1639396100897.16&amp;__hssc=96290627.4.1639396100897&amp;__hsfp=1293337235&amp;contentType=blog-post" target="_blank" rel="noopener" cta_dest_link="https://www.mgcertifica.cl/contacto"><img id="hs-cta-img-eb97d474-708f-4481-8225-31e6b43b6bcb" class="hs-cta-img " style="border-width: 0px; margin: 20px auto;" mce_noresize="1" alt="Contacto MG Certifica" height="500" width="500" src="https://f.hubspotusercontent30.net/hubfs/9013934/hub_generated/resized/54818ad6-4568-4d5e-bef9-48abfad3bcd5.jpeg" srcset="https://f.hubspotusercontent30.net/hubfs/9013934/hub_generated/resized/a40f1d8d-f89d-47da-b8ef-ab5373a13e38.jpeg 2x"></a></span>
+            <script charset="utf-8" src="../../../../assets/hs/cta/cta/current.js"></script>
+            <script type="text/javascript">
+                hbspt.cta._relativeUrls = true;
+                hbspt.cta.load(9013934, 'eb97d474-708f-4481-8225-31e6b43b6bcb', {
+                    "useNewLoader": "true",
+                    "region": "na1"
+                });
+            </script>
+            </span>
+            <!-- end HubSpot Call-to-Action Code -->
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-sm-12 col-lg-10 col-lg-offset-1 text-right author pt20 pb30">
+            <div class="cont">
+
+                <div class="avatar">
+                    <img class="avatar" width="500" alt="MG Certifica" src="https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=500&amp;name=profile-default-m.jpg" srcset="https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=250&amp;name=profile-default-m.jpg 250w, https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=500&amp;name=profile-default-m.jpg 500w, https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=750&amp;name=profile-default-m.jpg 750w, https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=1000&amp;name=profile-default-m.jpg 1000w, https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=1250&amp;name=profile-default-m.jpg 1250w, https://www.mgcertifica.cl/hs-fs/hubfs/img/profile-default-m.jpg?width=1500&amp;name=profile-default-m.jpg 1500w"
+                        sizes="(max-width: 500px) 100vw, 500px">
+                </div>
+
+                <div class="authorcontent">
+                    <h3>Equipo MG Certifica</h3>
+                    <p></p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="hs_cos_wrapper_module_16146970907824" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    <div class="container-fluid rel pt50 pb50 bgGray bannerDownload">
+        <div class="row">
+            <div class="container rel pt30 pb30">
+                <div class="row">
+
+                    <div class="col-sm-10 col-sm-offset-1 cont rel text-center">
+
+                        <h2>¿Sabes cómo realizar una Evaluación de Competencias Laborales?</h2>
+                        <p><br>Descarga gratis nuestra presentación con los Aspectos clave que debes considerar en tu Evaluación de Competencias Laborales para medir correctamente el desempeño de tus trabajadores.</p>
+
+
+                        <a href="https://www.mgcertifica.cl/lp-descarga-aspectos-claves-para-evaluar-competencias-laborales" class="btn btn-default btn-lg mt20" title="Me interesa">Me interesa</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

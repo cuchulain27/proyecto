@@ -1,0 +1,37 @@
+.hs-form-87773adc-a420-4645-917c-01a6cf8ca5db_a68cce31-dd8c-4c92-a681-50f81697aabe fieldset.form-columns-2 .hs-form-field {
+    width: 50%;
+    float: left;
+}
+
+.hs-form-87773adc-a420-4645-917c-01a6cf8ca5db_36bdead3-f676-47a8-babb-58c45fc66956 fieldset.form-columns-2 .hs-form-field {
+    width: 50%;
+    float: left;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+form .hs-form-field {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+.enviar{
+    background: #9f0109 !important;
+    white-space: pre-wrap;  
+    outline: 0;
+    border: 0;
+    font-size: 16px !important;
+    white-space: initial;
+    padding: 8px 25px;
+    line-height: 1.2;
+    min-height: 40px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    color: #fff;
+}

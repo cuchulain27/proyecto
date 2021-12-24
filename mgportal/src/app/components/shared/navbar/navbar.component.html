@@ -1,0 +1,63 @@
+<div id="hs_cos_wrapper_module_16142571141575" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    <nav class="navbar navbar-default navbar-fixed-top navMG blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navColapse" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+
+
+                        <a class="navbar-brand" href="index.html" title="MG Certifica">
+                            <img src="../../../assets/hs-fs/hubfs/img/logo-mgcertifica49d6.png?width=1000&amp;name=logo-mgcertifica.png" width="1000" alt="MG Certifica" title="MG Certifica" srcset="https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=500&amp;name=logo-mgcertifica.png 500w, https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=1000&amp;name=logo-mgcertifica.png 1000w, https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=1500&amp;name=logo-mgcertifica.png 1500w, https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=2000&amp;name=logo-mgcertifica.png 2000w, https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=2500&amp;name=logo-mgcertifica.png 2500w, https://www.mgcertifica.cl/hs-fs/hubfs/img/logo-mgcertifica.png?width=3000&amp;name=logo-mgcertifica.png 3000w"
+                                sizes="(max-width: 1000px) 100vw, 1000px">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navColapse">
+                        <div class="nav navbar-nav navbar-right navPr">
+                            <div class="menuPr">
+                                <span id="hs_cos_wrapper_module_16142571141575_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_16142571141575_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="38789926387" aria-label="Navigation Menu">
+   <ul role="menu" class="active active-branch">
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a class="nav-link" routerLinkActive="active"  href="index.html" role="menuitem">Inicio</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a class="nav-link" routerLinkActive="active" routerLink="empresa" role="menuitem">Nuestra Empresa</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a class="nav-link" routerLinkActive="active" routerLink="servicios" role="menuitem">Servicios</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a routerLinkActive="active" routerLink="blog" role="menuitem">Blog</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://portal.mgcertifica.cl/" role="menuitem" target="_blank" rel="noopener">Portal de Cliente</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://portal.mgcertifica.cl/tablero" role="menuitem" target="_blank" rel="noopener">Tablero de Gestión</a></li>
+    <li class="hs-menu-item hs-menu-depth-1" role="none"><a routerLink="contacto2" role="menuitem">Contacto</a></li>
+   </ul>
+  </div></span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a:not(".dropdown-toggle")')) {
+            $(this).collapse('hide');
+        }
+    });
+</script>
+
+<script>
+    $('li a').click(function(e) {
+        //e.preventDefault();
+        var $this = $(this);
+        $this.closest('lu').find('li.active,a.active').removeClass('active');
+        $this.addClass('active');
+        $this.parent().addClass('active');
+
+    });
+</script>

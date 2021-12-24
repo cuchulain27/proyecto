@@ -1,0 +1,25 @@
+.hs-form-e1d6602c-c43e-4981-be2c-dd1f20f6cbfa_8ad53986-8c54-486e-8de3-2ec95d40e2d0 fieldset.form-columns-2 .hs-form-field {
+    width: 50%;
+    float: left;
+}
+
+.li {
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.enviar{
+    background: #9f0109 !important;
+    white-space: pre-wrap;  
+    outline: 0;
+    border: 0;
+    font-size: 16px !important;
+    white-space: initial;
+    padding: 8px 25px;
+    line-height: 1.2;
+    min-height: 40px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    color: #fff;
+}
